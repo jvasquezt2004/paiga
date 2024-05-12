@@ -1,8 +1,7 @@
 import { Router } from 'express';
 const router = Router();
+import {rootController} from "../models/root.controller.js";
 
-app.get('/', (req, res) => {
-    res.redirect('/login')
-})
+router.get('/', rootController);
 
 export default router;
